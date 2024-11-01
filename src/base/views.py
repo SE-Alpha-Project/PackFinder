@@ -20,6 +20,11 @@
 #
 
 from django.urls import reverse_lazy
+from .models import Item  # Make sure to import your model
+
+from django.db.models import Q
+# base/views.py
+
 from django.views import generic
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
@@ -43,6 +48,9 @@ from django.utils.encoding import force_str
 from django.utils.http import urlsafe_base64_decode
 from base.tokens import account_activation_token
 from django.views import View
+
+from . import models
+
 
 
 class ActivateAccount(View):
@@ -175,4 +183,38 @@ def user_logout(request):
     """Log out and redirect to Home Page"""
     logout(request)
     messages.success(request, "Logged out successfully!")
-    return redirect("home")
+
+trait_weights = {
+    'bio': 2,        # Weight for bio matches
+    'degree': 1,     # Weight for degree matches
+    'course': 1,     # Weight for course matches
+    # Add more fields as necessary
+}
+
+def search_profiles(request):
+    query = request.GET.get('q', '').lower()
+    results = Profile.objects.all()
+
+    if query:
+        filters = Q()
+        for field, weight in trait_weights.items():
+            filters |= Q(**{f"{field}__icontains": query})
+
+        results = results.filter(filters)
+
+    # Prioritize based on weights
+    prioritized_results = sorted(results, key=lambda p: sum(
+        trait_weights[field] for field in trait_weights
+        if query in getattr(p, field, "").lower()
+    ), reverse=True)
+
+    selected_profile = None
+    if 'profile_id' in request.GET:
+        profile_id = request.GET['profile_id']
+        selected_profile = Profile.objects.filter(id=profile_id).first()
+
+    return render(request, 'search_results.html', {
+        'results': prioritized_results,
+        'selected_profile': selected_profile,
+    })
+

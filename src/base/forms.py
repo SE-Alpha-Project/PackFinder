@@ -50,6 +50,7 @@ class SignUpForm(UserCreationForm):
             )
 
         return self.cleaned_data
+    
 
 
 class ProfileForm(forms.ModelForm):
