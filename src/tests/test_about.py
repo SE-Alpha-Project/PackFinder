@@ -1,13 +1,11 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from django.template.loader import render_to_string
-from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 
 class AboutPageTests(TestCase):
     def setUp(self):
         self.client = Client()
-        self.about_url = reverse('about') 
-        
+        self.about_url = reverse('about')
+
     def test_about_page_status_code(self):
         """Test that the about page returns a 200 status code"""
         response = self.client.get(self.about_url)

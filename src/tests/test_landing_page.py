@@ -1,14 +1,13 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from django.contrib.auth.models import User
-from django.template.loader import render_to_string
+
 
 class LandingPageTests(TestCase):
     def setUp(self):
         """Set up test data"""
         self.client = Client()
-        self.landing_page_url = reverse('home')  
-        
+        self.landing_page_url = reverse('home')
+
     def test_landing_page_loads_successfully(self):
         """Test that the landing page loads with a 200 status code"""
         response = self.client.get(self.landing_page_url)
@@ -37,11 +36,11 @@ class LandingPageTests(TestCase):
         for user in test_users:
             self.assertContains(response, user)
 
-def test_signup_button_present(self):
-    """Test that the sign-up CTA button is present and links correctly"""
-    response = self.client.get(self.landing_page_url)
-    self.assertContains(response, 'Sign Up Today')
-    self.assertContains(response, 'href="/signup/"')
+    def test_signup_button_present(self):
+        """Test that the sign-up CTA button is present and links correctly"""
+        response = self.client.get(self.landing_page_url)
+        self.assertContains(response, 'Sign Up Today')
+        self.assertContains(response, 'href="/signup/"')
 
     def test_faq_section_functionality(self):
         """Test that FAQ section contains all questions and toggle functionality"""
