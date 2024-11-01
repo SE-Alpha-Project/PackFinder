@@ -47,7 +47,7 @@ class SignUpForm(UserCreationForm):
         if not check_ncsu_email(email):
             self._errors["email"] = self.error_class(
                 ["Please use a valid ncsu email id"]
-            )
+        )
 
         return self.cleaned_data
 
