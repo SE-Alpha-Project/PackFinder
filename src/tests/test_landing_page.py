@@ -1,7 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 
-
 class LandingPageTests(TestCase):
     def setUp(self):
         """Set up test data"""
