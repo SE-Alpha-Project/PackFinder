@@ -13,23 +13,23 @@
     <!-- Login Card -->
     <div class="relative z-10 max-w-md w-full px-8 py-10 bg-white rounded-lg shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
         
-        <h2 class="text-3xl font-extrabold text-center text-red-600 mb-6">Welcome Back</h2>
+        <h2 class="text-3xl font-extrabold text-center text-blue-900 mb-6">Welcome Back</h2>
         
         <form method="post" class="space-y-6">
             {% csrf_token %}
             {{ form|crispy }}
             
-            <button type="submit" class="w-full py-2 bg-red-600 hover:bg-red-700 text-white text-lg font-semibold rounded-lg shadow-md transition duration-300">
+            <button type="submit" class="w-full py-2 bg-blue-900 hover:bg-blue-700 text-white text-lg font-semibold rounded-lg shadow-md transition duration-300">
                 Login
             </button>
             
             <p class="mt-4 text-center text-gray-700">
                 Don't have an account? 
-                <a href="{% url 'signup' %}" class="text-red-600 font-semibold hover:underline">Sign Up</a>
+                <a href="{% url 'signup' %}" class="text-blue-900 font-semibold hover:underline">Sign Up</a>
             </p>
 
             <p class="mt-2 text-center text-gray-700">
-                <a href="{% url 'password_reset' %}" class="text-red-600 font-semibold hover:underline">Forgot Password?</a>
+                <a href="{% url 'password_reset' %}" class="text-blue-900 font-semibold hover:underline">Forgot Password?</a>
             </p>
         </form>
         
@@ -38,7 +38,7 @@
 
 <style>
     .custom-bg {
-        background-image: url('{% static "img/signin-bg.png" %}');
+        background-image: url('{% static "img/image.png" %}');
         background-size: cover;
         background-position: center;
     }
