@@ -49,7 +49,7 @@ pathspec==0.10.1
 # Pillow==9.2.0
 platformdirs==2.5.2
 pre-commit==2.20.0
-psycopg2==2.9.3
+#psycopg2==2.9.3
 pycodestyle==2.9.1
 pyflakes==2.5.0
 Pygments==2.13.0
