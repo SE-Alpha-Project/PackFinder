@@ -8,7 +8,7 @@ class NavbarTests(TestCase):
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'href="/about"')
-        self.assertContains(response, 'href="/signup"')      
+        self.assertContains(response, 'href="/signup"')
         self.assertNotContains(response, 'href="/profile"')
         self.assertNotContains(response, 'href="/myroom"')
         self.assertNotContains(response, 'href="/findpeople"')
