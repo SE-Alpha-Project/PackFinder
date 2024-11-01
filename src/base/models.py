@@ -20,7 +20,6 @@
 #
 
 from email.policy import default
-from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -30,8 +29,6 @@ from django_countries.fields import CountryField
 
 
 from django.contrib.auth.models import AbstractUser
-
-from django.conf import settings
 
 from .managers import CustomUserManager
 from .utils import check_ncsu_email
@@ -177,35 +174,6 @@ class Profile(models.Model):
 
     def __str__(self):
         return f"{self.user.email}-profile"
-
-
-class Profile(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
-    email_confirmed = models.BooleanField(default=False)
-    name = models.CharField(max_length=100)
-    bio = models.TextField()
-    course = models.CharField(max_length=100)
-    degree = models.CharField(max_length=100)
-    gender = models.CharField(max_length=10)
-    visibility = models.BooleanField(default=True)  # Example field
-    birth_date = models.DateField(null=True, blank=True)
-    diet = models.CharField(max_length=100, null=True, blank=True)
-    country = models.CharField(max_length=100, null=True, blank=True)
-    hometown = models.CharField(max_length=100, null=True, blank=True)
-    profile_photo = models.ImageField(upload_to='profile_photos/', null=True, blank=True)
-    preference_gender = models.CharField(max_length=10, null=True, blank=True)
-    preference_degree = models.CharField(max_length=100, null=True, blank=True)
-    preference_diet = models.CharField(max_length=100, null=True, blank=True)
-    preference_country = models.CharField(max_length=100, null=True, blank=True)
-    preference_course = models.CharField(max_length=100, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
-    
-# base/models.py
-class Item(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.CharField(max_length=255, null=True)
 
 
 @receiver(post_save, sender=get_user_model())
