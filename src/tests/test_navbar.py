@@ -1,13 +1,14 @@
 from django.test import TestCase
 from django.urls import reverse
 
+
 class NavbarTests(TestCase):
     def test_navbar_unauthenticated_links(self):
         """Test that unauthenticated users see correct nav links"""
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'href="/about"')
-        self.assertContains(response, 'href="/signup"')        
+        self.assertContains(response, 'href="/signup"')      
         self.assertNotContains(response, 'href="/profile"')
         self.assertNotContains(response, 'href="/myroom"')
         self.assertNotContains(response, 'href="/findpeople"')
@@ -25,4 +26,4 @@ class NavbarTests(TestCase):
         self.assertContains(response, 'href="/about"')
         self.client.login(username='testuser', password='testpass123')
         response = self.client.get(reverse('home'))
-        self.assertContains(response, 'href="/about"') 
+        self.assertContains(response, 'href="/about"')
