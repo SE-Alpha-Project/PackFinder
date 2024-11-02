@@ -1,15 +1,14 @@
 # 🐺 **PackFinder** 🐺  
-[![Tests](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml)
-[![Codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
-[![Linting](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml)
-![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
-[![Code Size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
-[![Repo Size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
+[![Test](https://github.com/SE-Alpha-Project/PackFinder/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/SE-Alpha-Project/PackFinder/actions/workflows/Unit_Tests.yml)
+[![codecov](https://codecov.io/gh/SE-Alpha-Project/PackFinder/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/SE-Alpha-Project/PackFinder)
+[![Test](https://github.com/SE-Alpha-Project/PackFinder/actions/workflows/Linting.yml/badge.svg)](https://github.com/SE-Alpha-Project/PackFinder/actions/workflows/Linting.yml)
+[![code_size](https://img.shields.io/github/languages/code-size/SE-Alpha-Project/PackFinder)](https://github.com/SE-Alpha-Project/PackFinder)
+[![repo_size](https://img.shields.io/github/repo-size/SE-Alpha-Project/PackFinder)](https://github.com/SE-Alpha-Project/PackFinder)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7155519.svg)](https://doi.org/10.5281/zenodo.7155519)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Issues](https://img.shields.io/github/issues/rohitgeddam/FindMyRoomie.svg)](https://github.com/rohitgeddam/FindMyRoomie/issues)
-[![Issues Closed](https://img.shields.io/github/issues-closed/rohitgeddam/FindMyRoomie.svg)](https://github.com/rohitgeddam/FindMyRoomie/issues?q=is%3Aissue+is%3Aclosed)
-[![Release](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)](https://github.com/rohitgeddam/FindMyRoomie/releases)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/SE-Alpha-Project/PackFinder.svg)](https://GitHub.com/SE-Alpha-Project/PackFinder/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub version](https://img.shields.io/github/v/release/SE-Alpha-Project/PackFinder)](https://github.com/SE-Alpha-Project/PackFinder/releases)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ---
 
