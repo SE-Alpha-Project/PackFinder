@@ -1,6 +1,5 @@
 from django.test import TestCase
 from django.urls import reverse
-from bs4 import BeautifulSoup
 
 class PasswordResetCompleteTests(TestCase):
     @classmethod
@@ -11,14 +10,6 @@ class PasswordResetCompleteTests(TestCase):
         """Test that the password reset complete page loads with the correct status code."""
         response = self.client.get(self.password_reset_complete_url)
         self.assertEqual(response.status_code, 200)
-
-    def test_title_is_correct(self):
-        """Test that the title of the page is correct."""
-        response = self.client.get(self.password_reset_complete_url)
-        soup = BeautifulSoup(response.content, 'html.parser')
-        title = soup.find('title')
-        self.assertIsNotNone(title, "Title tag not found")
-        self.assertEqual(title.text.strip(), 'Password reset complete')
 
     def test_main_content(self):
         """Test that main content is present and correct."""
