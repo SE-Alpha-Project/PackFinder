@@ -55,15 +55,18 @@ Easily reset your password via an email link if you’ve forgotten it.
 
 ### 👤 **My Profile**
 Customize your profile, set preferences, and share a bit about yourself. Make your profile visible to actively seek roommates or hide it if you’re already settled!
-<p align="center">
-<img src="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png" width="800">
-</p>
+
+![image](https://github.com/user-attachments/assets/5df59ee8-8a7f-4635-bf92-1a54419ece0f)
+
 
 ### 🐺 **Find Roommates**
 Browse other profiles and use our “Wolf Filter” to find roommates who match your preferences!
-<p align="center">
-<img src="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png" width="800">
-</p>
+
+![image](https://github.com/user-attachments/assets/e1f61974-610f-4780-9ba9-b6427727790e)
+![image](https://github.com/user-attachments/assets/a2a389e8-82ce-4dc9-bfa1-b11a0545c65c)
+![image](https://github.com/user-attachments/assets/e3765814-8d99-4ef8-a4c1-379f192d8a46)
+
+
 
 ---
 
