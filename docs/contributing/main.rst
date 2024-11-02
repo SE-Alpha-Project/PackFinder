@@ -6,7 +6,7 @@ Hey! We are happy to see you willing to contribute to this project.
 Before you go ahead, kindly discuss the changes you wish to make through
 issues, discussions, or email. Also, make sure you check out our `CODE
 OF
-CONDUCT <https://github.com/rohitgeddam/FindMyRoomie/blob/main/CODE-OF-CONDUCT.md>`__
+CONDUCT <https://github.com/rohitgeddam/PackFinder/blob/main/CODE-OF-CONDUCT.md>`__
 to contribute and participate in this project.
 
 How to contribute
@@ -15,7 +15,7 @@ How to contribute
 To contribute to the repository, the repository has to be forked into
 your own Github account and then cloned to create a local repository in
 your machine. The instructions to setup the project is described in
-`README <https://github.com/rohitgeddam/FindMyRoomie/blob/main/README.md>`__.
+`README <https://github.com/rohitgeddam/PackFinder/blob/main/README.md>`__.
 We strongly advice to create a new branch for each of your contribution
 which will be merged after the contribution has been reviewed.
 
@@ -55,7 +55,7 @@ Additional tips!
 3. Always add a test.
 4. If it is a new feature, open an issue to discuss it with any of the
    maintainers.
-5. Our `GitHub Discussions <https://github.com/rohitgeddam/FindMyRoomie/discussions>`__ 
+5. Our `GitHub Discussions <https://github.com/rohitgeddam/PackFinder/discussions>`__ 
    can be used to discuss some potential features or aout bug fixes.
 
 Thank you and looking forward to your contributions!

@@ -7,7 +7,7 @@ Set up the project on your local machine
 
 1. Clone the repository:
 
-   ``git clone https://github.com/rohitgeddam/FindMyRoomie.git``  
+   ``git clone https://github.com/rohitgeddam/PackFinder.git``  
 
 2. Setup the virtual environment:
 

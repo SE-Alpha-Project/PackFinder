@@ -35,7 +35,7 @@ from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
 from django.template.loader import render_to_string
 from .filters import ProfileFilter
-from .matching import matchings
+from .matching import matchings, get_compatible_roommates
 
 from django.contrib.auth import login
 from django.contrib.auth.models import User
@@ -93,7 +93,7 @@ class SignUpView(generic.CreateView):
         self.object.save()
 
         current_site = get_current_site(self.request)
-        subject = "Activate Your FindMyRoomie Account"
+        subject = "Activate Your PackFinder Account"
         message = render_to_string(
             "emails/account_activation_email.html",
             {
@@ -219,3 +219,11 @@ def inbox_view(request):
         'messages': message_list
     }
     return render(request, 'inbox.html', context)
+
+
+@login_required
+def find_roommates(request):
+    compatible_roommates = get_compatible_roommates(request.user.profile)
+    return render(request, 'find_roommates.html', {
+        'matches': compatible_roommates
+    })

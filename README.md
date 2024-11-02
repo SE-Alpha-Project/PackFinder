@@ -1,22 +1,22 @@
 <<<<<<< HEAD
-[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml)
-[![codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
-[![Test](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Linting.yml)
-![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
+[![Test](https://github.com/rohitgeddam/PackFinder/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/PackFinder/actions/workflows/Unit_Tests.yml)
+[![codecov](https://codecov.io/gh/rohitgeddam/PackFinder/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/PackFinder)
+[![Test](https://github.com/rohitgeddam/PackFinder/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Linting.yml)
+![CodeQL](https://github.com/rohitgeddam/PackFinder/workflows/CodeQL/badge.svg)
 [![code_size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1) 
 [![repo_size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7155519.svg)](https://doi.org/10.5281/zenodo.7155519)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub issues](https://img.shields.io/github/issues/rohitgeddam/FindMyRoomie.svg)](https://GitHub.com/rohitgeddam/FindMyRoomie/issues/)
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/rohitgeddam/FindMyRoomie.svg)](https://GitHub.com/rohitgeddam/FindMyRoomie/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)](https://github.com/rohitgeddam/FindMyRoomie/releases)
+[![GitHub issues](https://img.shields.io/github/issues/rohitgeddam/PackFinder.svg)](https://GitHub.com/rohitgeddam/PackFinder/issues/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/rohitgeddam/PackFinder.svg)](https://GitHub.com/rohitgeddam/PackFinder/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/PackFinder)](https://github.com/rohitgeddam/PackFinder/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ![fmr](https://user-images.githubusercontent.com/73664200/194788342-99dac017-b22c-40cc-911a-32bbf8826f5d.png)
 
-# FindMyRoomie
+# PackFinder
 <p align = "justify">
-<b>FindMyRoomie</b> is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. FindMyRoomie is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any <b> NC State student </b> could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
+<b>PackFinder</b> is a Web Application that provides a platform for lonely wolves (NC State students) to find roommates of their preference. The stakes are high when it comes to finding your best roommate because this relationship starts with a living relationship :sweat_smile:. We understand how stressful this can be, especially if you are moving to a new city or country. PackFinder is a one-stop solution to your roommate finding needs. Our software has functionalities that allow you to filter and choose your ideal roommate. But if that is too much work for you, we also provide roommate suggestions based on your preferences! Any <b> NC State student </b> could sign up with their NC State Email address from any corner of the world on our website and begin searching for roommates. 
 </p>
 
 <p align = "center">
@@ -25,7 +25,7 @@
 
 <sub>GIF from [Tenor](https://tenor.com/view/roommate-rachel-monica-friends-gif-7920313).<sub>
 
-The software is free for use by anyone, and we also welcome any contributions to improve our software. Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CITATION.cff) file.
+The software is free for use by anyone, and we also welcome any contributions to improve our software. Please read our [CONTRIBUTING.md](https://github.com/rohitgeddam/PackFinder/blob/main/CONTRIBUTING.md) file for more details). If you would like to cite our repository, please check our [CITATION.cff](https://github.com/rohitgeddam/PackFinder/blob/main/CITATION.cff) file.
 
 
 ## Features of our software
@@ -137,7 +137,7 @@ https://user-images.githubusercontent.com/73664200/194796923-61d96045-04f9-4e2d-
 
 #### 1. Clone the repository:  
 
-   `git clone https://github.com/rohitgeddam/FindMyRoomie.git`
+   `git clone https://github.com/rohitgeddam/PackFinder.git`
 
 #### 2. Setup the virtual environment:  
     
@@ -206,7 +206,7 @@ We use GitHub actions to automate tasks of linting, code coverage, build, tests,
 
 ### Unit tests:
 
-Unit test are performed everytime there is a push or pull into the repository. For more information about Unit test visit [Test README](https://github.com/rohitgeddam/FindMyRoomie/blob/main/src/tests/README.md)
+Unit test are performed everytime there is a push or pull into the repository. For more information about Unit test visit [Test README](https://github.com/rohitgeddam/PackFinder/blob/main/src/tests/README.md)
 
 ### How to build docs
 `sphinx-build -b html docs/  docs/build `
@@ -330,14 +330,14 @@ Questions about the software? Kindly contact us through one of the following rou
 
 Feel free to reach out to us in case you encounter issues in the software, for example, issues in signing up, logging in, or any othe features. 
 
-<a href = "https://github.com/rohitgeddam/FindMyRoomie/discussions">  
+<a href = "https://github.com/rohitgeddam/PackFinder/discussions">  
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786118-21d6c5d7-9950-4a8f-94a1-896358d21437.png"/>
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href = "https://twitter.com/findmyroomie_nc">  
+<a href = "https://twitter.com/PackFinder_nc">  
 <img width = "35px" src = "https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg"/>
 </a> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href = "mailto:ncsu.findmyroomie@gmail.com">
+<a href = "mailto:ncsu.PackFinder@gmail.com">
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
 </a>

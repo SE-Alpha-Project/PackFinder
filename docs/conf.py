@@ -29,7 +29,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "FindMyRoomie"
+project = "PackFinder"
 copyright = "2022, Rohit Geddam"
 author = "Rohit Geddam, Arun Kuma Ramesh, Kiron Jayesh, Shandler Mason and Sai Krishna Teja Varma Manthena"
 

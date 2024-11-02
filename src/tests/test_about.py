@@ -42,5 +42,5 @@ class AboutPageTests(TestCase):
     def test_about_page_contains_documentation_link(self):
         """Test that the documentation link is present"""
         response = self.client.get(self.about_url)
-        self.assertContains(response, 'https://findmyroomie.readthedocs.io/en/latest/')
+        self.assertContains(response, 'https://PackFinder.readthedocs.io/en/latest/')
         self.assertContains(response, 'Read Documentation')
