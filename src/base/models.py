@@ -24,6 +24,7 @@ from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.contrib.auth import get_user_model
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 from django_countries.fields import CountryField
 
@@ -183,6 +184,50 @@ class Profile(models.Model):
     ], blank=True)
     interests = models.TextField(max_length=300, blank=True)
     preferred_location = models.CharField(max_length=100, blank=True)
+
+    sleep_schedule = models.CharField(max_length=20, choices=[
+        ('Early_Bird', 'Early Bird (Before 10 PM)'),
+        ('Night_Owl', 'Night Owl (After 10 PM)'),
+        ('Flexible', 'Flexible'),
+    ], default='Flexible')
+    sleep_schedule_importance = models.IntegerField(
+        default=5,
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        help_text="How important is sleep schedule matching? (1-10)"
+    )
+
+    cleanliness = models.IntegerField(
+        choices=[(i, i) for i in range(1, 11)],
+        default=5,
+        help_text="How clean do you keep your space? (1-10)"
+    )
+    cleanliness_importance = models.IntegerField(
+        default=5,
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        help_text="How important is cleanliness matching? (1-10)"
+    )
+
+    noise_level = models.CharField(max_length=20, choices=[
+        ('Quiet', 'Prefer Quiet'),
+        ('Moderate', 'Moderate Noise OK'),
+        ('Active', 'Active/Social Environment'),
+    ], default='Moderate')
+    noise_importance = models.IntegerField(
+        default=5,
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        help_text="How important is noise level matching? (1-10)"
+    )
+
+    guests_preference = models.CharField(max_length=20, choices=[
+        ('Rarely', 'Rarely/Never'),
+        ('Sometimes', 'Sometimes'),
+        ('Often', 'Often'),
+    ], default='Sometimes')
+    guests_importance = models.IntegerField(
+        default=5,
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
+        help_text="How important is guest preference matching? (1-10)"
+    )
 
     def __str__(self):
         return f"{self.user.email}-profile"
