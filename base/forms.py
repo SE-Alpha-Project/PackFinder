@@ -1,10 +1,16 @@
+from django.db import models
+from django.contrib.auth.models import User
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import get_user_model
+from .models import Profile
 
-class CustomUserCreationForm(UserCreationForm):
-    email = forms.EmailField(required=True)
+class Message(models.Model):
+    sender = models.ForeignKey(User, related_name='sent_messages', on_delete=models.CASCADE)
+    receiver = models.ForeignKey(User, related_name='received_messages', on_delete=models.CASCADE)
+    content = models.TextField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+    is_read = models.BooleanField(default=False) 
 
+class ProfileUpdateForm(forms.ModelForm):
     class Meta:
-        model = get_user_model()
-        fields = ("username", "email", "password1", "password2") 
+        model = Profile
+        fields = ['profile_picture', 'bio'] 

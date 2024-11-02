@@ -117,16 +117,18 @@ def home(request):
     return render(request, "index.html", {"user_count": user_count})
 
 
-@login_required()
+@login_required
 def profile(request):
-    """Render profile page"""
-    if not request.user.profile.is_profile_complete:
-        messages.error(request, "Please complete your profile first!")
-        return redirect("profile_edit")
+    return render(request, 'profile.html')
 
-    profile = Profile.objects.get(user=request.user)
 
-    return render(request, "pages/profile.html", {"profile": profile})
+@login_required
+def inbox(request):
+    return render(request, 'inbox.html')
+
+
+def welcome(request):
+    return render(request, 'welcome.html')
 
 
 @login_required()

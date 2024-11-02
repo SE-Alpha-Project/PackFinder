@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="background-color: yellow; padding: 20px; margin: 20px;">
+    <h1>TEST - If you see this yellow box, templates are working!</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">🐺 Welcome! 🐺</h2>
+                    <div class="text-center mb-4">
+                        <p class="lead">Start your roommate search by going to Find People Page.</p>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <a href="/find-people" class="btn btn-primary btn-lg">Find People</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: url("{% static 'css/images/bg.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+    .card {
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .btn-primary {
+        background-color: #cc0000;
+        border-color: #cc0000;
+    }
+</style>
+{% endblock %} 

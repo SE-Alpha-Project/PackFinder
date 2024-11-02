@@ -1,11 +1,18 @@
-from django.core.mail import send_mail
-from django.conf import settings
+from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
-# Example usage in a view
-send_mail(
-    subject='Your Subject',
-    message='Your Message',
-    from_email=settings.EMAIL_HOST_USER,
-    recipient_list=['recipient@example.com'],
-    fail_silently=False,
-) 
+@login_required
+def profile(request):
+    return render(request, 'base/profile.html')
+
+@login_required
+def inbox(request):
+    return render(request, 'base/inbox.html')
+
+@login_required
+def compatibility_quiz(request):
+    return render(request, 'base/compatibility_quiz.html')
+
+@login_required
+def find_people(request):
+    return render(request, 'base/find_people.html') 

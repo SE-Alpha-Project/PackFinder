@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Messages</h4>
+                </div>
+                <div class="card-body">
+                    {% for message in messages %}
+                    <div class="message-card mb-3 {% if not message.is_read %}unread{% endif %}">
+                        <div class="d-flex justify-content-between">
+                            <h5>From: {{ message.sender.username }}</h5>
+                            <small class="text-muted">{{ message.timestamp|date:"M d, Y" }}</small>
+                        </div>
+                        <p class="mb-1">{{ message.content }}</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="{% url 'send_message' message.sender.id %}" 
+                               class="btn btn-sm btn-outline-primary">Reply</a>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <p class="text-center">No messages yet!</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-image: url("{% static 'css/images/bg.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .message-card {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+    .unread {
+        background-color: #f8f9fa;
+        border-left: 3px solid #cc0000;
+    }
+    .card-header {
+        background-color: #cc0000 !important;
+    }
+</style>
+{% endblock %} 

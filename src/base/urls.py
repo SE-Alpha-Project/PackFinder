@@ -47,6 +47,9 @@ urlpatterns = [
         name="activate",
     ),
     path("", views.home, name="home"),
+    path('profile/', views.profile, name='profile'),
+    path('messages/', views.inbox_view, name='messages'),
+    path('', views.welcome, name='welcome'),
 ]
 
 # Only add this when we are in debug mode.
