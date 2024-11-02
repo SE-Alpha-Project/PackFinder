@@ -1,4 +1,17 @@
-<<<<<<< HEAD
+
+# 🐺 **PackFinder** 🐺  
+[![Tests](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Unit_Tests.yml)
+[![Codecov](https://codecov.io/gh/rohitgeddam/FindMyRoomie/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/FindMyRoomie)
+[![Linting](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FindMyRoomie/actions/workflows/Linting.yml)
+![CodeQL](https://github.com/rohitgeddam/FindMyRoomie/workflows/CodeQL/badge.svg)
+[![Code Size](https://img.shields.io/github/languages/code-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
+[![Repo Size](https://img.shields.io/github/repo-size/rohitgeddam/CSC510_PROJECT1)](https://github.com/rohitgeddam/CSC510_PROJECT1)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7155519.svg)](https://doi.org/10.5281/zenodo.7155519)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Issues](https://img.shields.io/github/issues/rohitgeddam/FindMyRoomie.svg)](https://github.com/rohitgeddam/FindMyRoomie/issues)
+[![Issues Closed](https://img.shields.io/github/issues-closed/rohitgeddam/FindMyRoomie.svg)](https://github.com/rohitgeddam/FindMyRoomie/issues?q=is%3Aissue+is%3Aclosed)
+[![Release](https://img.shields.io/github/v/release/rohitgeddam/FindMyRoomie)](https://github.com/rohitgeddam/FindMyRoomie/releases)
+
 [![Test](https://github.com/rohitgeddam/PackFinder/actions/workflows/Unit_Tests.yml/badge.svg)](https://github.com/rohitgeddam/PackFinder/actions/workflows/Unit_Tests.yml)
 [![codecov](https://codecov.io/gh/rohitgeddam/PackFinder/branch/main/graph/badge.svg?token=PCOHJETYCD)](https://codecov.io/gh/rohitgeddam/PackFinder)
 [![Test](https://github.com/rohitgeddam/PackFinder/actions/workflows/Linting.yml/badge.svg)](https://github.com/rohitgeddam/FinMyRoomie/actions/workflows/Linting.yml)
@@ -12,7 +25,9 @@
 [![GitHub version](https://img.shields.io/github/v/release/rohitgeddam/PackFinder)](https://github.com/rohitgeddam/PackFinder/releases)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-![fmr](https://user-images.githubusercontent.com/73664200/194788342-99dac017-b22c-40cc-911a-32bbf8826f5d.png)
+## 🌟 **About PackFinder**
+**PackFinder** is a free and easy-to-use roommate-matching platform built for NC State students. Use PackFinder to find the perfect roommate match based on your preferences and get recommendations suited to your lifestyle!  
+🧑‍💻 Want to contribute? Check out our [CONTRIBUTING.md](https://github.com/rohitgeddam/FindMyRoomie/blob/main/CONTRIBUTING.md).  
 
 # PackFinder
 <p align = "justify">
@@ -30,110 +45,56 @@ The software is free for use by anyone, and we also welcome any contributions to
 
 ## Features of our software
 
-#### 1. Homepage:
 
-The homepage contains the 'Sign in' and 'Sign up' buttons, along with the number of users that have registered.
 
-<p align = "center">
-<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png">
+
+## 💡 **Features**
+
+### 🏠 **Homepage**
+The homepage includes “Sign In” and “Sign Up” buttons, as well as a live count of registered users.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194783985-ab192bcc-9bd0-4ec3-8976-85a55ce8c1b1.png" width="800">
 </p>
 
-#### 2. SignUp: 
-
-Allows new users to register to our roommate finding portal. The 'Sign up' page asks to enter an NCSU email id and a suitable password which should be strong enogugh.
-
-<p align = "center">
-<img width = "800" src = "https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png">
+### ✍️ **Sign Up**
+Sign up with your NCSU email to join the roommate portal securely.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/52373569/194731737-93009a6e-141a-4bc8-8ba4-cc898f504186.png" width="800">
 </p>
 
-#### 3. Email Confirmation: 
-
-After entering the credentials for signup, a confirmation email is sent to the registered mail id, asking to confirm the resgistration. Upon clicking the link provided in the mail, the account gets confirmed and the user is directly redirected to the welcome page.
-
-<p align = "center">
-<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png">
+### 📧 **Email Confirmation**
+Complete your registration via a confirmation email and jump right in!
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194785333-ea980a67-8f7d-43a7-937d-da289dd2ea13.png" width="800">
 </p>
 
-#### 4. SignIn: 
-
-Allows existing users to login to our website using their credentials.
-
-<p align = "center">
-<img width = "800" src = "https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png">
+### 🔑 **Sign In**
+Returning users can quickly log in to explore roommate options.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194783912-b76925b4-9ade-43f4-ae43-7bb8f4ed439f.png" width="800">
 </p>
 
-#### 3. Resetting your password:
-
-In case the user forgets the password, they can enter their registered email id in the 'Forgot your passoword?' tab. An email with a link to set a new password will be sent to the email. Clicking the link will redirect the user to reset their password, and, tada! Password reset!!! 
-
-<p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785779-0eccfaba-c79d-4be0-9ee9-d4dee35b804e.png">
-</p>
-<br>
-<p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png">
+### 🔒 **Forgot Password**
+Easily reset your password via an email link if you’ve forgotten it.
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194785816-4cfbe8df-103e-46a5-80f9-684a2e14647f.png" width="800">
 </p>
 
-#### 3. Welcome page:
-
-A page with happy Mr. and Mrs. Wolf enjoying each other's company in the background, just like you and your roommates would be :heart_on_fire:. 
-
-<p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784000-b3126f63-d5fb-469b-a011-c82ae0df1ce1.png">
+### 👤 **My Profile**
+Customize your profile, set preferences, and share a bit about yourself. Make your profile visible to actively seek roommates or hide it if you’re already settled!
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png" width="800">
 </p>
 
-#### 4. My Profile: 
-
-<p align = "justify">
-Allows you to introduce whom you are to your future roommate! You are given the opportunity to tell others a little bit about yourself and your preferences. The "Visibility" checkbox in your profile allows you to choose whether you want to be visible to others. If you are looking for roommates, you can toggle it on, and if you have found one (Congratulations :partying_face: :partying_face:), you can toggle it off. It's that easy!
+### 🐺 **Find Roommates**
+Browse other profiles and use our “Wolf Filter” to find roommates who match your preferences!
+<p align="center">
+<img src="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png" width="800">
 </p>
 
-<p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784016-8c100734-16ff-403a-b565-9537cf5d1feb.png">
+---
 
- #### 5. Find people:
-  
- Lists the people looking for roommates just like you. Our "Wolf Filter" lets you filter candidates based on your preferences :wolf:. Be choosy!!	
- 
- <p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784052-7b3c491d-827a-4404-a3d1-35996416ba24.png">
- 
- #### 6. My room:
-   
-Lists your roommates (feature not available yet) and provides roommate suggestions based on your preferences. The similarity scores with other roommate seekers are calculated based on Manhattan Distance, and the people with the top scores are shown as suggestions. 
- 
-  <p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194784074-5faf5f21-199c-4b06-966f-74a48fb7a30f.png">
-  
-   
-#### 7. About
-
-Elaborates about the project and provides details about the contributors along with a link to our documentation.
- 
-<p align = "center">
-<img width = "800" src ="https://user-images.githubusercontent.com/73664200/194790928-2f494b10-761f-4ff1-826d-bffcbad2e707.png"> 
-
-
-### The website flow is depicted in the below video:
-
-#### Sign up:
-https://user-images.githubusercontent.com/73664200/194796584-5f1fea3f-9e45-4e7b-b69a-0e3b0b100b91.mp4
-
- 
-
-### Functionalities post sign up:
- 
-
- 
- 
-#### Resetting password:
- 
-
-https://user-images.githubusercontent.com/73664200/194796923-61d96045-04f9-4e2d-a524-546f8b7ee34e.mp4
-
-
- 
-## Steps to set up the project on your local machine
+## 🚀 **Getting Started**
 
 #### 1. Clone the repository:  
 
@@ -145,11 +106,11 @@ https://user-images.githubusercontent.com/73664200/194796923-61d96045-04f9-4e2d-
 
 #### 3. Activate the virtual environment:  
 
-    * On Mac/Linux:    
+    On Mac/Linux:    
     
       `source venv/bin/activate`
       
-    * On Windows:    
+    On Windows:    
     
       `venv\Scripts\activate`
    
@@ -199,6 +160,8 @@ python manage.py seed_users <number of fake instances>
 # creates ten fake users
 python manage.py seed_users 10
 ```
+
+---
 
 ## Automatic tools - GitHub Actions
  
@@ -256,54 +219,55 @@ If you prefer using Black in VSCode, you can add the below settings in your vsco
 ### CodeQL
 
 `CodeQL.yml` performs automated security checks on the codebase and scans it for any vulnerabilities and bugs. For more information about CodeQL, please visit this [link](https://codeql.github.com/docs/codeql-overview/about-codeql/). 
-  
-## Privacy Notice
 
-#### 1. What personal details of yours would you be sharing with us and why?
-<p align = "justify">
-To aid you in your roommate search, to help others find you, and also to provide you with relevant roommate suggestions, you will be asked to share your "Name", "Email", "Date of Birth", "Gender", "Diet", "Hometown", "Degree and Course", "Country of Origin". You are free to include anything in your bio (which could include your Instagram ID and other social media handles). 
+---
 
-#### 2. Will we be storing your details, and how will we use them?
+## 🔒 **Privacy Policy**
 
-Yes, we will be storing them in our database. We will ONLY use this to match you with potential roommates and improve our software. 
+1. **Data Collection**: Basic details are collected to match roommates efficiently.
+2. **Data Storage**: Data is stored securely and only used within the platform.
+3. **No External Sharing**: Your information is not shared with third parties.
+4. **Data Retention**: Stored as long as you’re using the service.
+5. **Data Removal**: Email us from your registered account to remove data.
 
-#### 3. Will we share it with any third-party institutions?
+---
 
-NO. Your data is safe with us :slightly_smiling_face:. We will not share/lend/rent your data to any outside institutions/personnel.
+## 🛠 **Technologies Used**
+- **Python 3.7+**
+- **Django 4.1.2**
+- **HTML5, CSS3, Bootstrap 5.2**
+- **TailwindCSS**
 
-#### 4. How long will you store my data?
+---
 
-We retain your information as long as needed to provide you with our services.
+## 🛤️ **Roadmap**
 
-#### 5. How to remove my data from the website?
+### **3-Month Milestones**
+- Apartment details in profiles for easier roommate pairing
+- Integrated chat for in-app messaging
 
-Our current release does not provide you with a mechanism to remove your data directly from our website. You are always free to turn off your visibility. If you still feel the need to remove your data from our website, kindly email one of the contributors from your registered Email ID, and we will take care of the rest!
-</p>
+### **6-Month Milestones**
+- Mobile app launch on Google Play and App Store
 
-## Technology Used
--   `Python 3.7+`
--   `Django 4.1.2`
--   `HTML5`
--   `CSS3`
--   `BootStrap v5.2`
+### **9-Month Milestones**
+- Partnership with local property agents for seamless listings
 
-## Roadmap
+---
 
-### 3 months milestone:
+## 📞 **Contact Us**
+Have questions? Reach out!  
 
-1. Include apartment details in the profile section. The details could include (but are not restricted to) the address of the apartment, the apartment BHK and size, and rent. Users who have already secured a property and are looking for roommates to occupy them could use this functionality.
-2. Provide an update for the 'My Room' page, giving users the option to include and display their finalized roommates.
-3. Create a platform within the website that allows homeowners to lease or sublease their apartments.
-4. Suggest properties based on user filters by scraping it from the web and update the matching algorithm.
-5. Implement a chat room that allows users to chat with one another in-webapp. 
+- **Yash Shah** - [yshah5@ncsu.edu](mailto:yshah5@ncsu.edu)  
+- **Chaitralee Datar** - [cdatar@ncsu.edu](mailto:cdatar@ncsu.edu)  
+- **Ananya Patankar** - [apatank@ncsu.edu](mailto:apatank@ncsu.edu)
 
-### 6 months milestone:
+---
+## 📜 **License**
+Distributed under the **MIT License**. See the `LICENSE` file for more information.
 
-6. Create a mobile application and publish it on App Store and Google Play Store
-7. Implement a subleasing option.
-8. Improve the matching algorithm.
+---
 
-### 9 months milestone:
+Thank you for checking out **PackFinder**! We're here to make your roommate search stress-free and enjoyable. Happy searching! 🎉🐺
 
 8. Partner with local property agents like Wilson Properties, Trinity Properties, etc. to list their properties on our website. 
 
@@ -341,3 +305,4 @@ Feel free to reach out to us in case you encounter issues in the software, for e
 <a href = "mailto:ncsu.PackFinder@gmail.com">
 <img width = "35px" src = "https://user-images.githubusercontent.com/73664200/194786335-12b1d3a6-b272-4896-9bd7-d615e28847f3.png"/>
 </a>
+
