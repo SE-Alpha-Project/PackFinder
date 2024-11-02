@@ -44,6 +44,8 @@ from django.utils.http import urlsafe_base64_decode
 from base.tokens import account_activation_token
 from django.views import View
 
+from .forms import ProfileUpdateForm
+
 
 class ActivateAccount(View):
     """Account activation"""
@@ -119,7 +121,20 @@ def home(request):
 
 @login_required
 def profile(request):
-    return render(request, 'profile.html')
+    if request.method == 'POST':
+        form = ProfileUpdateForm(request.POST, request.FILES, instance=request.user.profile)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your profile has been updated!')
+            return redirect('profile')
+    else:
+        form = ProfileUpdateForm(instance=request.user.profile)
+
+    context = {
+        'form': form,
+        'user': request.user
+    }
+    return render(request, 'profile.html', context)
 
 
 @login_required
@@ -178,3 +193,29 @@ def user_logout(request):
     logout(request)
     messages.success(request, "Logged out successfully!")
     return redirect("home")
+
+
+@login_required
+def inbox_view(request):
+    """
+    View for displaying user messages
+    """
+    # Temporary test messages
+    message_list = [
+        {
+            'sender': {'username': 'TestUser1'},
+            'content': 'Hello! I am interested in being your roommate.',
+            'timestamp': '2024-11-01',
+            'is_read': False
+        },
+        {
+            'sender': {'username': 'TestUser2'},
+            'content': 'Hi! When can we meet to discuss housing?',
+            'timestamp': '2024-11-01',
+            'is_read': True
+        }
+    ]
+    context = {
+        'messages': message_list
+    }
+    return render(request, 'inbox.html', context)

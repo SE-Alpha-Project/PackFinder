@@ -1,10 +1,49 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-<div class="card">
-    <div class="card-body">
-        <h2>My Profile</h2>
-        <p>This is a test profile page</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">My Profile</h2>
+                    <div class="text-center mb-4">
+                        <img src="{{ user.profile.profile_picture.url|default:'/static/images/default-profile.png' }}" 
+                             class="rounded-circle profile-img" 
+                             alt="Profile Picture"
+                             style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-primary" type="submit">Update Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+    body {
+        background-image: url("{% static 'css/images/bg.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+    .profile-img {
+        border: 3px solid #cc0000;
+        padding: 3px;
+    }
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .btn-primary {
+        background-color: #cc0000;
+        border-color: #cc0000;
+    }
+</style>
 {% endblock %} 

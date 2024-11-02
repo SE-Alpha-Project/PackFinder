@@ -172,6 +172,18 @@ class Profile(models.Model):
 
     email_confirmed = models.BooleanField(default=False)
 
+    profile_picture = models.ImageField(upload_to='profile_pics/', default='default.jpg')
+    major = models.CharField(max_length=100, blank=True)
+    year = models.CharField(max_length=20, choices=[
+        ('Freshman', 'Freshman'),
+        ('Sophomore', 'Sophomore'),
+        ('Junior', 'Junior'),
+        ('Senior', 'Senior'),
+        ('Graduate', 'Graduate')
+    ], blank=True)
+    interests = models.TextField(max_length=300, blank=True)
+    preferred_location = models.CharField(max_length=100, blank=True)
+
     def __str__(self):
         return f"{self.user.email}-profile"
 

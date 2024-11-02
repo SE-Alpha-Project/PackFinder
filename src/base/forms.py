@@ -107,3 +107,43 @@ class ProfileForm(forms.ModelForm):
                 },
             )
         }
+
+
+class ProfileUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['profile_picture', 'bio', 'major', 'year', 'interests', 'preferred_location']
+        widgets = {
+            'bio': forms.Textarea(attrs={
+                'class': 'form-control',
+                'rows': 4,
+                'placeholder': 'Tell us about yourself...'
+            }),
+            'major': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'e.g., Computer Science'
+            }),
+            'year': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'interests': forms.Textarea(attrs={
+                'class': 'form-control',
+                'rows': 3,
+                'placeholder': 'What are your hobbies and interests?'
+            }),
+            'preferred_location': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'e.g., Wolf Village, College Inn'
+            }),
+            'profile_picture': forms.FileInput(attrs={
+                'class': 'form-control'
+            })
+        }
+        labels = {
+            'bio': 'About Me',
+            'major': 'Major',
+            'year': 'Year',
+            'interests': 'Interests & Hobbies',
+            'preferred_location': 'Preferred Housing Location',
+            'profile_picture': 'Profile Picture'
+        }
