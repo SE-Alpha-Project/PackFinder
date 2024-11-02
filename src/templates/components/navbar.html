@@ -22,7 +22,7 @@
 <!-- <bootstrap class="js"></bootstrap> -->
 
 <!-- <nav class="navbar navbar-expand-lg custom-color__navbar">
-    <a class="navbar-brand" href="/">FindMyRoomie</a>
+    <a class="navbar-brand" href="/">PackFinder</a>
     <a class="nav-link" href="/about">About <span class="sr-only"></span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,6 +99,10 @@
                 <a href="/myroom" class="text-white hover:bg-blue-700 hover:text-gray-200 px-3 py-2 rounded-md">
                     My Room
                 </a>
+                <a href="{% url 'user_logout' %}"
+                    class="text-white hover:bg-blue-700 hover:text-gray-200 px-3 py-2 rounded-md">
+                    Logout
+                </a>
                 {% endif %}
                 {% if not user.is_authenticated %}
                 <a href="/signup" class="text-white hover:bg-blue-700 hover:text-gray-200 px-3 py-2 rounded-md">
@@ -109,12 +113,7 @@
 
             <!-- Right-aligned Logout Button -->
             <div class="mt-3 lg:mt-0 lg:flex lg:items-center lg:ml-auto">
-                {% if user.is_authenticated %}
-                <a href="{% url 'user_logout' %}"
-                    class="text-white hover:bg-red-800 hover:text-gray-200 px-3 py-2 rounded-md">
-                    Logout
-                </a>
-                {% endif %}
+
             </div>
         </div>
     </div>

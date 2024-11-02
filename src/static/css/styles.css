@@ -32,7 +32,8 @@ html {
     height: 86.4vh;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Untitled.jpeg');
+    /* background-image: url('{% static "img/image.png" %}'); */
+    background-image: url('../img/hero.png');
     background-position: 0px 0px;
     background-size: cover;
     background-clip: border-box;

@@ -21,35 +21,18 @@
 
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import get_user_model
-from .utils import check_ncsu_email
-
-# from django.contrib.admin.widgets import AdminDateWidget
+from django.contrib.auth.models import User
 from .models import Profile
 
 
 class SignUpForm(UserCreationForm):
     """Build Sign up Form"""
 
-    # username = forms.CharField(label="<b>NCSU</b> E-mail", max_length=100)
+    email = forms.EmailField()
+
     class Meta:
-        model = get_user_model()
-        fields = [
-            "email",
-        ]
-
-    def clean(self):
-        # data is feteched using the super function of django
-        super(SignUpForm, self).clean()
-
-        email = self.cleaned_data.get("email")
-
-        if not check_ncsu_email(email):
-            self._errors["email"] = self.error_class(
-                ["Please use a valid ncsu email id"]
-            )
-
-        return self.cleaned_data
+        model = User
+        fields = ['username', 'email', 'password1', 'password2']
 
 
 class ProfileForm(forms.ModelForm):
@@ -106,4 +89,71 @@ class ProfileForm(forms.ModelForm):
                     "type": "date",
                 },
             )
+        }
+
+
+class ProfileUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = [
+            'profile_picture', 
+            'bio', 
+            'major', 
+            'year', 
+            'interests', 
+            'preferred_location',
+            'sleep_schedule',
+            'sleep_schedule_importance',
+            'cleanliness',
+            'cleanliness_importance',
+            'noise_level',
+            'noise_importance',
+            'guests_preference',
+            'guests_importance'
+        ]
+        widgets = {
+            'bio': forms.Textarea(attrs={
+                'class': 'form-control',
+                'rows': 4,
+                'placeholder': 'Tell us about yourself...'
+            }),
+            'major': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'e.g., Computer Science'
+            }),
+            'year': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'interests': forms.Textarea(attrs={
+                'class': 'form-control',
+                'rows': 3,
+                'placeholder': 'What are your hobbies and interests?'
+            }),
+            'preferred_location': forms.TextInput(attrs={
+                'class': 'form-control',
+                'placeholder': 'e.g., Wolf Village, College Inn'
+            }),
+            'profile_picture': forms.FileInput(attrs={
+                'class': 'form-control'
+            }),
+            'sleep_schedule': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'cleanliness': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'noise_level': forms.Select(attrs={
+                'class': 'form-control'
+            }),
+            'guests_preference': forms.Select(attrs={
+                'class': 'form-control'
+            })
+        }
+        labels = {
+            'bio': 'About Me',
+            'major': 'Major',
+            'year': 'Year',
+            'interests': 'Interests & Hobbies',
+            'preferred_location': 'Preferred Housing Location',
+            'profile_picture': 'Profile Picture'
         }

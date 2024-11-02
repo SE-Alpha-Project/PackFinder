@@ -5,8 +5,8 @@ Questions about the software? Kindly contact us through one of the following rou
 
 Feel free to reach out to us in case you encounter issues in the software, for example, issues in signing up, logging in, or any other features. 
 
-`Twitter <https://twitter.com/findmyroomie_nc>`__
+`Twitter <https://twitter.com/PackFinder_nc>`__
 
-`GitHub discussions <https://github.com/rohitgeddam/FindMyRoomie/discussions>`__
+`GitHub discussions <https://github.com/rohitgeddam/PackFinder/discussions>`__
 
-`Email <mailto:ncsu.findmyroomie@gmail.com>`__
+`Email <mailto:ncsu.PackFinder@gmail.com>`__

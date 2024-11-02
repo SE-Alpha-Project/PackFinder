@@ -1,0 +1,20 @@
+site_name: PackFinder Documentation
+site_description: Documentation for the PackFinder roommate matching application
+repo_url: https://github.com/yourusername/PackFinder
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Features: features.md
+  - User Guide: user-guide.md
+  - API Reference: api.md
+
+theme:
+  name: readthedocs
+  highlightjs: true
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences 
