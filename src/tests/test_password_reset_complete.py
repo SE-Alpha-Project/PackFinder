@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
+
 class PasswordResetCompleteTests(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -55,3 +56,4 @@ class PasswordResetCompleteTests(TestCase):
         self.assertIn('bg-blue-900', content)  # Check navbar background
         self.assertIn('bg-blue-600', content)  # Check button background
         self.assertIn('image.png', content)  # Background image
+
